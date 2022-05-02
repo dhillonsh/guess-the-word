@@ -1,0 +1,224 @@
+
+html, body, .wrapper {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+body {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+}
+/* styles to set containers size and aspect ratio */
+.greedy {
+  /* height is 16/9 width */
+  width:50.625vh;
+  height: 90vh;
+ /* padding: 10%;*/
+}
+
+
+.top {
+  background: linear-gradient(139deg, rgba(0,65,255,1) 0%, rgba(1,37,188,1) 43%, rgba(2,2,106,1) 100%);
+  height: 60%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(10, 10%);
+}
+
+.title {
+  display: grid;
+  grid-row: 2 / 4;
+  grid-column: 1 / 21;
+  text-align: center;
+  color: white;
+}
+
+.winnerHeaderContainer {
+  position: relative;
+  grid-column: 6 / 16;
+  grid-row: 10;
+  display: grid;
+  justify-content: center;
+}
+
+.winnerHeader {
+  color: yellow;
+  font-size: 5vh;
+}
+
+.winnerImageContainer {
+   display: grid;
+   grid-column: 8 / 14;
+   grid-row: 7 / 10;
+   position: relative;
+ }
+
+.winnerImage {
+  margin: auto auto 0;
+  width: 100%;
+}
+
+.winnerNameContainer {
+  position: relative;
+  grid-column: 6 / 16;
+  grid-row: 6;
+  
+  height: 100%;
+  width: 100%;
+}
+
+.winnerName {
+  font-size: 4vh;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.followersContainer {
+ /* background-color: green;*/
+  position: relative;
+  grid-column: 1 / 6;
+  grid-row: 6 / 11;
+  
+  height: 100%;
+  width: 100%;
+}
+
+.followerImage {
+  clip-path: circle();
+  max-width: 2vw;
+}
+
+.follower {
+  line-height: 0em;
+  font-size: 1.6vh;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(10vh);
+  z-index: 1;
+
+  animation: rise 5s linear infinite;
+  animation-iteration-count: 1;
+}
+@keyframes rise {
+  to {
+    transform: translateY(-16vh);
+  }
+}
+
+.star {
+  line-height: 0em;
+  font-size: 2vh !important;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  z-index: 1;
+
+  animation:riseAndSpin 3s linear forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes riseAndSpin {
+  0% {
+    transform: translateY(0%) scale(0);
+  }
+  20% {
+    transform: translateY(-4vh) scale(1) rotate(27deg);
+  }
+  85% {
+    transform: translateY(-13vh) scale(1) rotate(115deg);
+  }
+  100% {
+      transform: translateY(-15vh) scale(0) rotate(135deg);
+  }
+}
+/*
+h1 {
+  font-size: 5vh;
+  margin-block-end: 8%;
+}
+
+h2 {
+  font-size: 3vh;
+}
+
+h3 {
+  font-size: 40px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  left: 0;
+}*/
+
+.cardsContainer {
+  display: grid;
+  grid-row: 4 / 6;
+  grid-column: 1 / 21;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  /*height: 100%;*/
+  margin: auto;
+  width: 75%;
+}
+
+.card {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 15%;
+  background: white;
+  width: 15%;
+  font-size: 8vh;
+  padding: 0.3vh;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: repeat(10, 10%);
+  height: 40%;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.chat-box {
+  background: linear-gradient(45deg, rgba(66,66,66,1) 0%, rgba(14,14,14,1) 100%);
+  grid-column: 1 / 14;
+  grid-row: 1 / 11;
+}
+
+.right-half-top {
+  background: linear-gradient(135deg, rgba(166,103,0,1) 0%, rgba(105,65,0,1) 100%);
+  grid-column: 14 / 21;
+  grid-row: 1 / 5;
+}
+
+.right-half-bottom {
+  background: linear-gradient(45deg, rgba(154,0,109,1) 0%, rgba(156,0,110,1) 16%, rgba(83,0,55,1) 100%);
+  grid-column: 14 / 21;
+  grid-row: 5 / 11;
+}

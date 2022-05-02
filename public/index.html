@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hello world</title>
+  <meta name="description" content="Dead simple html 5 template">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="wrapper">
+    <div class="greedy">
+    <section class="top">
+        <div class="title">
+          <span style="font-size: 6vh">Guess the Word</span>
+          <span style="font-size: 3.4vh">Type your answer in the chat</span>
+        </div>
+        <div class="cardsContainer">
+          <div class="cards">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </div>
+      
+      <div class="followersContainer">
+      </div>
+      <div class="winnerNameContainer">
+        <div class="winnerName">testing winner</div>
+      </div>
+      <div class="winnerImageContainer">
+        <img class="winnerImage" src="data:image/png;base64,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" />
+        <div class="starsContainer"></div>
+      </div>
+      <div class="winnerHeaderContainer">
+        <span class="winnerHeader" style="display: block;">Winner!!</span>
+        
+      </div>
+      
+    </section>
+    <section class="bottom">
+      <div class="chat-box">
+        <article>
+          
+        </article>
+      </div>
+      <div class="right-half-top">
+        
+      </div>
+       <div class="right-half-bottom">
+        
+      </div>
+    </section>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
