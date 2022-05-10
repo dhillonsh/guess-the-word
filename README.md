@@ -3,6 +3,10 @@
 Dead simple web server that I use to fast-deploy static website / web application, mostly locally.
 It's written using the awesome **node.js + express.js** combo. Logging done via **morgan**.
 
+## Requirements:
+- NodeJS v17.5.0
+- NPM v8.4.1
+
 ## Usage :
 1. download & extract repository locally
 2. in terminal : `npm install && npm start` (web server started at `localhost:80`)
