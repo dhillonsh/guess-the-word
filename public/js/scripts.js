@@ -202,7 +202,7 @@ function retrieveWordBank() {
   });
 }
 
-//retrieveWordBank();
+retrieveWordBank();
 
 setInterval(function() {
   showFollower();
