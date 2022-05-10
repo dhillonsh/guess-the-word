@@ -12,7 +12,7 @@ app.get('/wordbank', (req, res) => {
 
 /* TikTok connector */
 let socketStates = {};
-const { WebcastPushConnection } = require('tiktok-livestream-chat-connector'); 
+const { WebcastPushConnection } = require('tiktok-live-connector'); 
 // Username of someone who is currently live
 let tiktokUsername = "guess_the_word_game";
 // Create a new wrapper object and pass the username

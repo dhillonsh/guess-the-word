@@ -30,8 +30,7 @@
     "forever": "latest",
     "morgan": "latest",
     "query-string": "^7.1.1",
-    "tiktok-livestream-chat-connector": "^0.9.16",
+    "tiktok-live-connector": "^0.9.20",
     "ws": "^8.5.0"
-  },
-  "devDependencies": {}
+  }
 }
